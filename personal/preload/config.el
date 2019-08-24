@@ -5,3 +5,7 @@
 ;; line numbers
 (global-display-line-numbers-mode)
 (setq display-line-numbers 'relative)
+
+;; allow page up in evil
+(setq evil-want-C-u-scroll t)
+(advice-add #'smartparens-mode :before-until (lambda (&rest args) t))
