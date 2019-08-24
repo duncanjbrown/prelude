@@ -19,3 +19,4 @@
 
 ;; Begin git commit messages in INSERT
 (add-hook 'git-commit-mode-hook 'evil-insert-state)
+(add-hook 'cider-repl-mode-hook 'evil-insert-state)
