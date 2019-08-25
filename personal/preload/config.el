@@ -1,3 +1,5 @@
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 (setq prelude-theme 'solarized-dark)
 (set-default-font "IBM Plex Mono-13")
 (setq default-frame-alist '((font . "IBM Plex Mono-13")))
