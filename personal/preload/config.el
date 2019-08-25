@@ -2,7 +2,7 @@
 
 (setq prelude-theme 'solarized-dark)
 (set-default-font "IBM Plex Mono-13")
-(setq default-frame-alist '((font . "IBM Plex Mono-13")))
+(setq default-frame-alist '((font . "IBM Plex Mono-13") (fullscreen . maximized)))
 
 ;; line numbers
 (global-display-line-numbers-mode)
