@@ -26,3 +26,7 @@
 (setq org-refile-use-outline-path 'file)
 (setq org-outline-path-complete-in-steps nil)
 (setq org-refile-allow-creating-parent-nodes 'confirm)
+
+;; capture
+(global-set-key (kbd "C-c c") 'org-capture)
+(setq org-default-notes-file "~/Dropbox/org/refile-beorg.org")
