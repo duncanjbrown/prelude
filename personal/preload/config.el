@@ -9,11 +9,15 @@
 (setq display-line-numbers 'relative)
 
 ;; allow page up in evil
-(setq evil-want-C-u-scroll t)
+(setq evil-want-C-u-scroll nil)
 (advice-add #'smartparens-mode :before-until (lambda (&rest args) t))
 
 ;; set fixed- and variable-pitched (for org mode) fonts
 (custom-theme-set-faces
  'user
- '(variable-pitch ((t (:family "IBM Plex Serif" :height 160 :weight normal))))
- '(fixed-pitch ((t ( :family "IBM Plex Mono" :slant normal :weight normal :height 1.0 :width normal)))))
+ '(variable-pitch       ((t (:family "IBM Plex Serif" :height 160 :weight normal))))
+ '(fixed-pitch          ((t ( :family "IBM Plex Mono" :slant normal :weight normal :height 0.8 :width normal))))
+ '(org-block            ((t (:inherit fixed-pitch))))
+ '(org-block-begin-line ((t (:inherit fixed-pitch :slant italic))))
+ '(org-block-end-line   ((t (:inherit org-block-begin-line))))
+ '(org-meta-line        ((t (:inherit org-block-begin-line)))))

@@ -1,4 +1,4 @@
-(prelude-require-package 'org-bullets)
+(prelude-require-packages '(org-bullets mermaid-mode ob-mermaid))
 
 (require 'org)
 
@@ -30,3 +30,6 @@
 ;; capture
 (global-set-key (kbd "C-c c") 'org-capture)
 (setq org-default-notes-file "~/Dropbox/org/refile-beorg.org")
+
+;; mermaid in literate programming
+(setq ob-mermaid-cli-path "/usr/local/bin/mmdc")
