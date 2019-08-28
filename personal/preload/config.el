@@ -8,8 +8,7 @@
 (global-display-line-numbers-mode)
 (setq display-line-numbers 'relative)
 
-;; allow page up in evil
-(setq evil-want-C-u-scroll nil)
+;; disable smartparens
 (advice-add #'smartparens-mode :before-until (lambda (&rest args) t))
 
 ;; set fixed- and variable-pitched (for org mode) fonts
