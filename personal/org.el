@@ -16,11 +16,13 @@
 ;; express bold, italic etc as they are, not via _, * etc
 (setq org-hide-emphasis-markers t)
 
-;; Use variable pitch mode, bullets and visual-line-mode
+;; Use variable pitch mode and bullets
 (add-hook 'org-mode-hook (lambda ()
                            (org-bullets-mode t)
-                           (variable-pitch-mode 1)
-                           (visual-line-mode)))
+                           (auto-fill-mode t)
+                           (org-indent-mode t)
+                           (variable-pitch-mode 1)))
+
 ;; Refile config
 ;; https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html
 (setq org-refile-use-outline-path 'file)
