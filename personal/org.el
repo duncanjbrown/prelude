@@ -47,3 +47,12 @@
 (require 'ox-tufte)
 (require 'ox-md)
 (setq org-export-with-smart-quotes t)
+
+;; capture templates
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/Dropbox/org/tasks.org" "Tasks")
+         "* TODO %?\n  %i\n  %a")
+        ("n" "Note" entry (file+headline "~/Dropbox/org/notes.org" "Notes")
+         "* %? \n%U\n  %i\n")
+        ("j" "Journal" entry (file+datetree "~/Dropbox/org/journal.org")
+         "* %? \n%U\n  %i\n  %a")))
