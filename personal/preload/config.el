@@ -21,3 +21,6 @@
  '(org-block-begin-line ((t (:inherit fixed-pitch :slant italic))))
  '(org-block-end-line   ((t (:inherit org-block-begin-line))))
  '(org-meta-line        ((t (:inherit org-block-begin-line)))))
+
+;; scrolloff
+(setq scroll-margin 10)
