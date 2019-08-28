@@ -1,4 +1,4 @@
-(prelude-require-packages '(org-bullets mermaid-mode ob-mermaid))
+(prelude-require-packages '(org-bullets mermaid-mode ob-mermaid ox-tufte htmlize))
 
 (require 'org)
 
@@ -31,5 +31,14 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 (setq org-default-notes-file "~/Dropbox/org/refile-beorg.org")
 
+;; literate programming
+(setq org-confirm-babel-evaluate nil)
+
 ;; mermaid in literate programming
 (setq ob-mermaid-cli-path "/usr/local/bin/mmdc")
+
+;; export
+(setq org-html-validation-link nil)
+(require 'ox-tufte)
+(require 'ox-md)
+(setq org-export-with-smart-quotes t)
