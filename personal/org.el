@@ -21,7 +21,17 @@
                            (org-bullets-mode t)
                            (auto-fill-mode t)
                            (org-indent-mode t)
+                           (company-mode -1)
                            (variable-pitch-mode 1)))
+
+(setq org-todo-keywords
+      '((sequence "TODO" "DONE")
+        (sequence "READ" "REVIEW" "|" "FINISHED")
+        (sequence "SHARE" "|" "SHARED")
+        (sequence "WRITE" "IN PROGRESS" "|" "PUBLISHED")
+        (sequence "SPIKE" "FEATURE" "|" "REJECTED" "ADOPTED")))
+
+(setq org-log-done 'time)
 
 ;; Refile config
 ;; https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html
