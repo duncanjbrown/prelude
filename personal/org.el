@@ -25,7 +25,7 @@
                            (variable-pitch-mode 1)))
 
 (setq org-todo-keywords
-      '((sequence "TODO" "DONE")
+      '((sequence "TODO" "IN-PROGRESS" "|" "DONE")
         (sequence "READ" "REVIEW" "|" "FINISHED")
         (sequence "SHARE" "|" "SHARED")
         (sequence "WRITE" "IN PROGRESS" "|" "PUBLISHED")
