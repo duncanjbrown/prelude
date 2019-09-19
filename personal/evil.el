@@ -1,6 +1,9 @@
-(setq evil-want-keybinding nil)
 (prelude-require-packages '(general evil-collection))
+
 (general-evil-setup t)
+
+(evil-collection-init)
+
 (general-def :states '(normal motion emacs) "SPC" nil)
 
 (nvmap :prefix "SPC"

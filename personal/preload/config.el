@@ -23,5 +23,8 @@
  '(org-block-end-line   ((t (:inherit org-block-begin-line))))
  '(org-meta-line        ((t (:inherit org-block-begin-line)))))
 
+(setq evil-want-keybinding nil)
+(setq evil-want-integration t)
+
 ;; scrolloff
 (setq scroll-margin 10)
