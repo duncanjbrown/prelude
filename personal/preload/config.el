@@ -18,6 +18,7 @@
  '(fixed-pitch          ((t ( :family "IBM Plex Mono" :slant normal :weight normal :height 0.8 :width normal))))
  '(org-block            ((t (:inherit fixed-pitch))))
  '(org-code             ((t (:inherit fixed-pitch))))
+ '(org-table            ((t (:inherit fixed-pitch))))
  '(org-block-begin-line ((t (:inherit fixed-pitch :slant italic))))
  '(org-block-end-line   ((t (:inherit org-block-begin-line))))
  '(org-meta-line        ((t (:inherit org-block-begin-line)))))
