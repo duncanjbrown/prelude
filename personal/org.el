@@ -2,16 +2,18 @@
 
 (require 'org)
 
-(setq org-agenda-files (apply 'append
-                              (mapcar
-                               (lambda (directory)
-                                 (directory-files-recursively
-                                  directory org-agenda-file-regexp))
-                               '("~/Dropbox/org"))))
+(setq org-files (apply 'append
+                       (mapcar
+                        (lambda (directory)
+                          (directory-files-recursively
+                           directory org-agenda-file-regexp))
+                        '("~/Dropbox/org"))))
+
+(setq org-agenda-files '("~/Dropbox/org/work.org" "~/Dropbox/org/tasks.org"))
 
 ;; refile to the same files
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
-                                 (org-agenda-files :maxlevel . 9))))
+                                 (org-files :maxlevel . 9))))
 
 ;; express bold, italic etc as they are, not via _, * etc
 (setq org-hide-emphasis-markers t)
