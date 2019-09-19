@@ -27,3 +27,5 @@ prelude-cheatsheet.el
 prelude-cheatsheet.aux
 prelude-cheatsheet.log
 personal/calendar.el
+.extension
+.lsp-session-v1
