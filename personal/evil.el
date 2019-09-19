@@ -1,4 +1,5 @@
-(prelude-require-packages '(general evil-magit))
+(setq evil-want-keybinding nil)
+(prelude-require-packages '(general evil-collection))
 (general-evil-setup t)
 (general-def :states '(normal motion emacs) "SPC" nil)
 
