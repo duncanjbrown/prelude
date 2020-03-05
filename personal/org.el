@@ -62,7 +62,9 @@
 ;; capture templates
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/Dropbox/org/tasks.org" "Tasks")
-         "* TODO %?\n  %i\n  %a")
+         "* TODO %?\n  %i\n")
+        ("w" "Work todo" entry (file+headline "~/Dropbox/org/work.org" "Work")
+         "* TODO %?\n  %i\n")
         ("m" "Meeting" entry (file+headline "~/Dropbox/org/tasks.org" "Meetings")
          "* %? \n%U\n  %i\n")
         ("n" "Note" entry (file+headline "~/Dropbox/org/notes.org" "Notes")

@@ -21,6 +21,7 @@
 
 (global-set-key (kbd "M-3")(lambda () (interactive) (insert "#")))
 
-;; Begin git commit messages in INSERT
-(add-hook 'git-commit-mode-hook 'evil-insert-state)
+;; Begin Cider REPL in INSERT
 (add-hook 'cider-repl-mode-hook 'evil-insert-state)
+
+(evil-select-search-module 'evil-search-module 'evil-search)
